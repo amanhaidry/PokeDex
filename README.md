@@ -13,16 +13,13 @@ PokeDex is a React-based web application that allows users to browse and search 
 ## Screenshots
 
 ### Home Page
-![Home Page](./screenshots/Screenshot.png)
+![Home Page](./screenshots/sc1.png)
 
 ### Pokémon Details
-![Pokémon Details](./screenshots/Screenshot0.png)
+![Pokémon Details](./screenshots/sc4.png)
 
-### Search Result
-![Search Feature](./screenshots/Screenshot1.png)
-
-### Similar Result
-![Search Feature](./screenshots/Screenshot2.png)
+### Similar
+![Similar](./screenshots/sc3.png)
 
 ## Installation and Setup
 
