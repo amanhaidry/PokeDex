@@ -12,7 +12,7 @@ function PokemonList() {
     return (
         <div className='pokemon-list-wrapper'>
             <div>
-                <h1>Pokemon list</h1>
+                <h1 className='list-heading'>Pokemon list</h1>
             </div>
             <div className='page-controls'>
                 <button onClick={() => setPokemonListState({...pokemonListState, pokedexUrl: pokemonListState.prevUrl})}>Prev</button>

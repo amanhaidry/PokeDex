@@ -1,14 +1,41 @@
 .pokemon-list {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-around;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* Default: 4 Pokémon per row for large screens */
+    gap: 16px;
+    padding: 16px;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
 .pokemon-list-wrapper {
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+
+.pokemon-list-wrapper h1 {
+    font-size: 3rem; /* Default size for large screens */
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+/* Medium screens (tablets): Adjust h1 size */
+@media (max-width: 1024px) {
+    .pokemon-list-wrapper h1 {
+        font-size: 2.5rem;
+    }
+}
+
+/* Small screens (mobile): Adjust h1 size further */
+@media (max-width: 768px) {
+    .list-heading {
+        font-size: 0.5rem;
+    }
+}
+
+.page-controls {
+    margin-top: 16px;
 }
 
 .page-controls button {
@@ -18,8 +45,30 @@
     border: none;
     background-color: salmon;
     border-radius: 10px;
+    cursor: pointer;
 }
 
 .page-controls button:hover {
-    background-color:tomato;
+    background-color: tomato;
+}
+
+/* Medium screens (tablets): 3 Pokémon per row */
+@media (max-width: 1024px) {
+    .pokemon-list {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+/*  Small screens (mobile): 1 Pokémon per row */
+@media (max-width: 768px) {
+    .pokemon-list {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* very Small screens (mobile): 1 Pokémon per row */
+@media (max-width: 568px) {
+    .pokemon-list {
+        grid-template-columns: repeat(1, 1fr);
+    }
 }
